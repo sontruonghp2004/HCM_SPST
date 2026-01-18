@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "year": "1920",
+    "title": "Nguyễn Ái Quốc tiếp thu Chủ nghĩa Mác – Lênin",
+    "description": "Xác định vai trò quyết định của Đảng trong sự nghiệp cách mạng.",
+    "image": "/public/images/timeline/hcm_1920.jpg",
+    "detailContent": {
+      "context": "Năm 1920, Nguyễn Ái Quốc đọc Luận cương của Lênin về vấn đề dân tộc và thuộc địa.",
+      "significance": "Người khẳng định chỉ có Đảng cách mạng chân chính mới lãnh đạo cách mạng thành công.",
+      "keyFigures": ["Nguyễn Ái Quốc"],
+      "outcomes": [
+        "Xác lập vai trò lãnh đạo của Đảng",
+        "Đặt nền tảng tư tưởng xây dựng Đảng"
+      ],
+      "historicalContext": "Phong trào yêu nước Việt Nam lâm vào khủng hoảng về đường lối."
+    }
+  },
+  {
+    "id": 2,
+    "year": "1930",
+    "title": "Thành lập Đảng Cộng sản Việt Nam",
+    "description": "Đảng ra đời gắn liền với mục tiêu vì dân, vì nước.",
+    "image": "/public/images/timeline/hcm_1930.jpg",
+    "detailContent": {
+      "context": "Đảng Cộng sản Việt Nam thành lập ngày 3/2/1930.",
+      "significance": "Hồ Chí Minh nhấn mạnh: Đảng không có lợi ích nào khác ngoài lợi ích của nhân dân.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Đảng gắn bó mật thiết với nhân dân",
+        "Xác lập bản chất cách mạng và nhân văn"
+      ],
+      "historicalContext": "Yêu cầu thống nhất phong trào cách mạng Việt Nam."
+    }
+  },
+  {
+    "id": 3,
+    "year": "1945",
+    "title": "Đảng trở thành Đảng cầm quyền",
+    "description": "Quyền lực đặt ra nguy cơ tha hóa nếu không tự rèn luyện.",
+    "image": "/public/images/timeline/hcm_1945.jpg",
+    "detailContent": {
+      "context": "Sau Cách mạng Tháng Tám, Đảng nắm chính quyền.",
+      "significance": "Hồ Chí Minh cảnh báo: Đảng cầm quyền rất dễ mắc bệnh quan liêu, xa dân.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Nhận diện nguy cơ suy thoái",
+        "Đặt vấn đề xây dựng Đảng cầm quyền"
+      ],
+      "historicalContext": "Chuyển từ Đảng lãnh đạo cách mạng sang Đảng lãnh đạo Nhà nước."
+    }
+  },
+  {
+    "id": 4,
+    "year": "1947",
+    "title": "Phê phán bệnh quan liêu, mệnh lệnh",
+    "description": "Quan liêu là nguyên nhân làm mất lòng tin của nhân dân.",
+    "image": "/public/images/timeline/hcm_1947.jpg",
+    "detailContent": {
+      "context": "Trong kháng chiến chống Pháp, Hồ Chí Minh phê phán mạnh bệnh quan liêu.",
+      "significance": "Quan liêu làm Đảng xa dân, dân mất niềm tin, cách mạng suy yếu.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Xác định quan liêu là kẻ thù của Đảng",
+        "Đề cao phong cách gần dân"
+      ],
+      "historicalContext": "Bộ máy chính quyền non trẻ dễ rơi vào hình thức, mệnh lệnh."
+    }
+  },
+  {
+    "id": 5,
+    "year": "1952",
+    "title": "Chống tham ô, lãng phí, tham nhũng",
+    "description": "Tham nhũng là nguy cơ trực tiếp làm Đảng mất uy tín.",
+    "image": "/public/images/timeline/hcm_1952.jpg",
+    "detailContent": {
+      "context": "Hồ Chí Minh phát động phong trào chống tham ô, lãng phí.",
+      "significance": "Người coi tham nhũng là \"giặc nội xâm\", nguy hiểm hơn giặc ngoại xâm.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Đặt nền tảng đạo đức công vụ",
+        "Bảo vệ uy tín của Đảng"
+      ],
+      "historicalContext": "Nhà nước mới hình thành, cán bộ nắm quyền lực và tài sản công."
+    }
+  },
+  {
+    "id": 6,
+    "year": "1958",
+    "title": "Đạo đức cách mạng là gốc của người cán bộ",
+    "description": "Cán bộ thoái hóa sẽ làm Đảng suy yếu.",
+    "image": "/public/images/timeline/hcm_1958.jpg",
+    "detailContent": {
+      "context": "Hồ Chí Minh viết nhiều bài về đạo đức cách mạng.",
+      "significance": "Người khẳng định: có tài mà không có đức là người vô dụng.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Xây dựng chuẩn mực đạo đức cán bộ",
+        "Chống chủ nghĩa cá nhân"
+      ],
+      "historicalContext": "Đảng lãnh đạo xây dựng CNXH ở miền Bắc."
+    }
+  },
+  {
+    "id": 7,
+    "year": "1963",
+    "title": "Lấy dân làm gốc",
+    "description": "Mất lòng dân là mất tất cả.",
+    "image": "/public/images/timeline/hcm_1963.jpg",
+    "detailContent": {
+      "context": "Hồ Chí Minh khẳng định vai trò quyết định của nhân dân.",
+      "significance": "Đảng tồn tại nhờ lòng tin của nhân dân.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Củng cố mối quan hệ Đảng – dân",
+        "Phát huy dân chủ"
+      ],
+      "historicalContext": "Cuộc kháng chiến chống Mỹ bước vào giai đoạn quyết liệt."
+    }
+  },
+  {
+    "id": 8,
+    "year": "1969",
+    "title": "Di chúc Hồ Chí Minh",
+    "description": "Xây dựng Đảng là nhiệm vụ then chốt.",
+    "image": "/public/images/timeline/hcm_1969.jpg",
+    "detailContent": {
+      "context": "Di chúc là tổng kết tư tưởng của Hồ Chí Minh.",
+      "significance": "Người căn dặn phải giữ Đảng thật trong sạch, xứng đáng là người lãnh đạo.",
+      "keyFigures": ["Hồ Chí Minh"],
+      "outcomes": [
+        "Định hướng lâu dài xây dựng Đảng",
+        "Cảnh báo nguy cơ suy thoái"
+      ],
+      "historicalContext": "Trước khi Người qua đời."
+    }
+  },
+  {
+    "id": 9,
+    "year": "Đổi Mới",
+    "title": "Đảng cầm quyền trong điều kiện kinh tế thị trường",
+    "description": "Thách thức mới về đạo đức và quyền lực.",
+    "image": "/public/images/timeline/doi_moi.jpg",
+    "detailContent": {
+      "context": "Việt Nam chuyển sang kinh tế thị trường định hướng XHCN.",
+      "significance": "Mặt trái của thị trường làm gia tăng nguy cơ tham nhũng, lợi ích nhóm.",
+      "keyFigures": ["Đảng Cộng sản Việt Nam"],
+      "outcomes": [
+        "Yêu cầu đổi mới công tác xây dựng Đảng",
+        "Tăng cường kiểm tra, giám sát"
+      ],
+      "historicalContext": "Hội nhập quốc tế sâu rộng."
+    }
+  },
+  {
+    "id": 10,
+    "year": "Hiện Nay",
+    "title": "Giữ vững niềm tin nhân dân",
+    "description": "Điều kiện sống còn của Đảng cầm quyền.",
+    "image": "/public/images/timeline/hien_nay.jpg",
+    "detailContent": {
+      "context": "Bối cảnh toàn cầu hóa, chuyển đổi số.",
+      "significance": "Niềm tin của nhân dân quyết định sự tồn tại của Đảng.",
+      "keyFigures": ["Đảng Cộng sản Việt Nam"],
+      "outcomes": [
+        "Kiên quyết chống tham nhũng",
+        "Gần dân, trọng dân, vì dân"
+      ],
+      "historicalContext": "Yêu cầu xây dựng Nhà nước pháp quyền XHCN."
+    }
+  }
+]
