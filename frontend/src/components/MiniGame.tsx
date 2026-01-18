@@ -14,7 +14,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Scenario, getRandomScenarios } from "../content/situations.ts";
 import { LeaderboardSubmission, submitToLeaderboard } from "../services/leaderboardService";
 import GameIntro from "./GameIntro";
-import LeaderboardModal from "./LeaderboardModal";
+import LeaderboardModal from "./LeaderboardModal"; // Adjust path if it's in a different folder
 
 // --- 1. INTERFACE & TYPES ---
 

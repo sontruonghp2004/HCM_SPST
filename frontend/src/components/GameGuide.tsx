@@ -1,148 +1,155 @@
 // src/pages/GameGuide.tsx
-import { AlertCircle, ArrowRight, Globe, HeartHandshake, Shield, TrendingUp, Trophy } from 'lucide-react';
+import {
+  AlertCircle,
+  ArrowRight,
+  BookOpenText,
+  HeartHandshake,
+  Scale,
+  ShieldCheck,
+  UsersRound,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function GameGuide() {
   return (
-    <>
-      <main
-        className="min-h-screen pt-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/BackgroundGame.png')" }}
-      >
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-5xl mx-auto">
-            {/* Tiêu đề */}
-            <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4">
-                Hướng Dẫn Chơi
-                <span className="block text-lenin-yellow text-4xl md:text-5xl mt-2">
-                  Trò Chơi Lãnh Đạo Quốc Gia
-                </span>
-              </h1>
-              <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Học cách lãnh đạo đất nước qua 16 quyết định định mệnh trong 4 năm
-              </p>
+    <main className="min-h-screen pt-20 bg-gradient-to-b from-red-50 via-white to-yellow-50 relative overflow-hidden">
+      {/* Background mờ chân dung Bác Hồ hoặc cờ Đảng */}
+      <div
+        className="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: "url('/images/hcm-background.jpg')" }} // Thay bằng ảnh thực tế của bạn
+      />
+
+      <div className="relative container mx-auto px-4 py-12 z-10">
+        <div className="max-w-5xl mx-auto">
+          {/* Tiêu đề */}
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-red-800 drop-shadow-lg mb-6">
+              Trò Chơi Giáo Dục
+            </h1>
+            <h2 className="text-4xl md:text-6xl font-bold text-red-700 mb-4">
+              Xây Dựng Đảng Trong Sạch, Vững Mạnh
+            </h2>
+            <p className="text-2xl text-yellow-700 font-semibold italic">
+              Giữ Vững Niềm Tin Nhân Dân Theo Tư Tưởng Hồ Chí Minh
+            </p>
+            <p className="text-lg text-gray-700 mt-8 max-w-4xl mx-auto leading-relaxed">
+              Hồ Chí Minh từng cảnh báo: Đảng cầm quyền có thể “hỏng” nếu sa vào quan liêu, tham nhũng, xa rời nhân dân. 
+              Qua 16 tình huống thực tiễn, bạn sẽ vận dụng tư tưởng của Người để đưa ra quyết định đúng đắn, 
+              giữ vững niềm tin của nhân dân vào Đảng.
+            </p>
+          </div>
+
+          {/* Card hướng dẫn chính */}
+          <div className="bg-white rounded-3xl shadow-2xl border-4 border-red-600 overflow-hidden">
+            <div className="bg-gradient-to-r from-red-700 to-red-600 text-white p-8 text-center">
+              <BookOpenText className="w-16 h-16 mx-auto mb-4" />
+              <h3 className="text-3xl font-bold">Hướng Dẫn Tham Gia</h3>
             </div>
 
-            {/* Card chính */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 border-2 border-marx-red-light">
-              {/* 1. Giới thiệu */}
-              <section className="mb-12">
-                <h2 className="text-3xl font-bold text-marx-red mb-6 flex items-center">
-                  <Trophy className="w-10 h-10 mr-3 text-lenin-yellow" />
+            <div className="p-8 md:p-12 space-y-12">
+              {/* Mục tiêu */}
+              <section>
+                <h2 className="text-3xl font-bold text-red-800 mb-6 flex items-center justify-center">
+                  <ShieldCheck className="w-12 h-12 mr-4 text-red-600" />
                   Mục Tiêu Của Trò Chơi
                 </h2>
-                <div className="bg-gradient-to-r from-lenin-yellow/20 to-marx-red/20 p-6 rounded-xl border-l-4 border-lenin-yellow">
-                  <p className="text-lg text-gray-800 leading-relaxed">
-                    Bạn sẽ lãnh đạo đất nước trong <strong>4 năm (16 quý)</strong>. 
-                    Mỗi quý, bạn đối mặt với một tình huống thực tế về <strong>chính trị, kinh tế, xã hội hoặc ngoại giao</strong>.
+                <div className="bg-gradient-to-r from-yellow-50 to-red-50 p-8 rounded-2xl border-2 border-yellow-400 shadow-lg">
+                  <p className="text-xl text-gray-800 text-center leading-relaxed">
+                    Bạn sẽ đóng vai một cán bộ lãnh đạo Đảng, đối mặt với <strong>16 tình huống thực tiễn</strong> trong 4 năm nhiệm kỳ.
                   </p>
-                  <p className="text-lg text-gray-800 mt-4 font-semibold">
-                    Nhiệm vụ: Giữ tất cả chỉ số <span className="text-green-600">trên 0</span> và đạt <span className="text-marx-red">điểm trung bình cao nhất</span>!
+                  <p className="text-2xl font-bold text-red-700 mt-6 text-center">
+                    Nhiệm vụ: Giữ <span className="text-green-600">Niềm Tin Nhân Dân trên 0</span> và đạt điểm chỉnh đốn Đảng cao nhất!
+                  </p>
+                  <p className="text-lg italic text-gray-600 mt-4 text-center">
+                    "Phải giữ gìn Đảng ta thật trong sạch, phải xứng đáng là người lãnh đạo, là người đầy tớ thật trung thành của nhân dân." 
+                    <br />— <strong>Hồ Chí Minh</strong>
                   </p>
                 </div>
               </section>
 
-              {/* 2. 4 Chỉ số */}
-              <section className="mb-12">
-                <h2 className="text-3xl font-bold text-marx-red mb-6">
-                  4 Chỉ Số Quốc Gia
+              {/* 4 Chỉ số */}
+              <section>
+                <h2 className="text-3xl font-bold text-red-800 mb-8 text-center">
+                  Bốn Chỉ Số Cốt Lõi Theo Tư Tưởng Hồ Chí Minh
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {[
-                    { key: 'CT', name: 'Ổn định Chính trị', icon: Shield, color: 'text-blue-600', desc: 'Duy trì trật tự, tránh đảo chính, biểu tình.' },
-                    { key: 'KT', name: 'Tăng trưởng Kinh tế', icon: TrendingUp, color: 'text-green-600', desc: 'Phát triển GDP, việc làm, đầu tư.' },
-                    { key: 'CB', name: 'Công bằng Xã hội', icon: HeartHandshake, color: 'text-red-600', desc: 'Giảm bất bình đẳng, chăm lo dân sinh.' },
-                    { key: 'NG', name: 'Ngoại giao', icon: Globe, color: 'text-yellow-600', desc: 'Quan hệ quốc tế, uy tín toàn cầu.' },
-                  ].map((stat) => (
-                    <div key={stat.key} className="flex items-start p-5 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-                      <stat.icon className={`w-12 h-12 ${stat.color} mr-4 flex-shrink-0`} />
-                      <div>
-                        <h3 className="text-xl font-bold text-gray-900">{stat.name}</h3>
-                        <p className="text-gray-600 mt-1">{stat.desc}</p>
-                        <div className="mt-3 flex items-center gap-2">
-                          <span className="text-sm font-medium text-gray-500">Mức độ:</span>
-                          <div className="flex gap-1">
-                            {[0, 25, 50, 75, 100].map(level => (
-                              <div
-                                key={level}
-                                className={`w-6 h-6 rounded-full border-2 ${
-                                  level === 0 ? 'border-red-500 bg-red-100' :
-                                  level === 100 ? 'border-green-500 bg-green-100' :
-                                  'border-gray-300 bg-gray-100'
-                                }`}
-                              />
-                            ))}
-                          </div>
-                        </div>
+                    { name: 'Niềm Tin Nhân Dân', icon: UsersRound, color: 'text-blue-700', desc: 'Yếu tố quyết định sự tồn vong của Đảng. Mất lòng dân là mất tất cả.' },
+                    { name: 'Độ Trong Sạch Đảng', icon: ShieldCheck, color: 'text-green-700', desc: 'Chống tham nhũng, quan liêu, suy thoái – "giặc nội xâm".' },
+                    { name: 'Gắn Bó Với Dân', icon: HeartHandshake, color: 'text-red-700', desc: 'Lấy dân làm gốc, gần dân, lắng nghe dân, vì dân phục vụ.' },
+                    { name: 'Hiệu Quả Chỉnh Đốn', icon: Scale, color: 'text-yellow-700', desc: 'Tự phê bình, phê bình, nêu gương, dân chủ trong Đảng.' },
+                  ].map((stat, i) => (
+                    <div key={i} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-red-200 shadow-xl hover:shadow-2xl transition-all hover:border-red-500">
+                      <div className="flex flex-col items-center text-center">
+                        <stat.icon className={`w-20 h-20 ${stat.color} mb-4`} />
+                        <h3 className="text-2xl font-bold text-red-800 mb-3">{stat.name}</h3>
+                        <p className="text-gray-700 leading-relaxed">{stat.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </section>
 
-              {/* 3. Cách chơi */}
-              <section className="mb-12">
-                <h2 className="text-3xl font-bold text-marx-red mb-6 flex items-center">
-                  <AlertCircle className="w-10 h-10 mr-3 text-orange-500" />
+              {/* Cách chơi */}
+              <section>
+                <h2 className="text-3xl font-bold text-red-800 mb-8 flex items-center justify-center">
+                  <AlertCircle className="w-12 h-12 mr-4 text-orange-600" />
                   Cách Chơi
                 </h2>
-                <div className="space-y-6 text-lg text-gray-700">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-marx-red text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
-                    <p><strong>Đọc tình huống</strong> → Hiểu bối cảnh và vấn đề cần giải quyết.</p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-marx-red text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
-                    <p><strong>Chọn 1 trong 4 lựa chọn</strong> → Mỗi lựa chọn ảnh hưởng khác nhau đến 4 chỉ số.</p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-marx-red text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
-                    <p><strong>Xem kết quả</strong> → Biết chỉ số tăng/giảm bao nhiêu.</p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-marx-red text-white flex items-center justify-center font-bold flex-shrink-0">4</div>
-                    <p><strong>Tiếp tục 16 vòng</strong> → Cố gắng đạt điểm cao nhất!</p>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    "Đọc kỹ tình huống thực tiễn về xây dựng Đảng",
+                    "Chọn 1 trong 4 giải pháp phù hợp với tư tưởng Hồ Chí Minh",
+                    "Xem kết quả tác động đến 4 chỉ số và trích dẫn của Bác",
+                    "Hoàn thành 16 tình huống để nhận đánh giá cuối cùng",
+                  ].map((step, i) => (
+                    <div key={i} className="flex items-center gap-6 p-6 bg-red-50 rounded-xl border border-red-300">
+                      <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                        {i + 1}
+                      </div>
+                      <p className="text-lg font-medium text-gray-800">{step}</p>
+                    </div>
+                  ))}
                 </div>
               </section>
 
-              {/* 4. Mẹo chơi */}
-              <section className="mb-12 p-6 bg-lenin-yellow/10 border-2 border-lenin-yellow rounded-xl">
-                <h3 className="text-2xl font-bold text-marx-red mb-4">Mẹo Hay</h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-marx-red mt-2 flex-shrink-0"></div>
-                    <span>Không có lựa chọn nào "hoàn hảo" – luôn có đánh đổi.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-marx-red mt-2 flex-shrink-0"></div>
-                    <span>Nếu <strong>bất kỳ chỉ số nào = 0</strong> → bạn thua ngay!</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-marx-red mt-2 flex-shrink-0"></div>
-                    <span>Điểm trung bình càng cao → hạng càng cao trên bảng xếp hạng!</span>
-                  </li>
-                </ul>
+              {/* Mẹo từ Bác */}
+              <section className="bg-gradient-to-r from-yellow-100 to-red-100 p-10 rounded-2xl border-4 border-yellow-500 shadow-2xl">
+                <h3 className="text-3xl font-bold text-red-800 mb-6 text-center">
+                  Lời Dạy Của Bác – Mẹo Để Thành Công
+                </h3>
+                <div className="space-y-5 text-lg text-gray-800">
+                  {[
+                    "Luôn lấy dân làm gốc, gần dân, lắng nghe dân thật sự.",
+                    "Tự phê bình và phê bình nghiêm túc, không che giấu khuyết điểm.",
+                    "Cán bộ phải nêu gương, chí công vô tư, cần kiệm liêm chính.",
+                    "Chống tham nhũng quyết liệt – đó là 'giặc nội xâm' nguy hiểm.",
+                  ].map((tip, i) => (
+                    <div key={i} className="flex items-start gap-4">
+                      <div className="w-3 h-3 rounded-full bg-red-600 mt-2 flex-shrink-0"></div>
+                      <p><strong>{tip}</strong></p>
+                    </div>
+                  ))}
+                </div>
               </section>
 
               {/* Nút bắt đầu */}
-              <div className="text-center">
+              <div className="text-center pt-8">
                 <Link
                   to="/game"
-                  className="inline-flex items-center px-10 py-5 text-2xl font-bold text-white bg-marx-red hover:bg-marx-red-hover rounded-xl shadow-xl transition-all hover:shadow-2xl"
+                  className="inline-flex items-center px-12 py-6 text-3xl font-extrabold text-white bg-gradient-to-r from-red-700 to-red-600 hover:from-red-800 hover:to-red-700 rounded-2xl shadow-2xl transition-all transform hover:scale-105"
                 >
-                  Bắt Đầu Lãnh Đạo
-                  <ArrowRight className="w-8 h-8 ml-3" />
+                  Bắt Đầu Rèn Luyện Theo Tư Tưởng Bác
+                  <ArrowRight className="w-10 h-10 ml-4" />
                 </Link>
-                <p className="mt-6 text-sm text-gray-500">
-                  Sau khi chơi xong, bạn có thể gửi điểm lên <strong>Bảng Xếp Hạng</strong> từ menu
+                <p className="mt-6 text-lg text-gray-600">
+                  Sau khi hoàn thành, bạn có thể gửi điểm lên <strong>Bảng Xếp Hạng</strong> để so sánh với các bạn khác
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   );
 }

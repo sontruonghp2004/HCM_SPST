@@ -39,20 +39,13 @@ export default function HeroSection() {
                     size="lg"
                     className="px-8 py-6 text-lg font-bold bg-marx-red hover:bg-marx-red-hover text-white rounded-xl shadow-xl transition-all hover:shadow-2xl"
                   >
-                    <Link to="/guide">
+                    <Link to="/presentations">
                       Khám Phá Nội Dung
                     </Link>
                   </Button>
 
                   {/* Nút phụ: Mở modal */}
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="px-8 py-6 text-lg font-medium border-2 border-marx-red-light text-marx-red hover:bg-marx-red/5 rounded-xl transition-all"
-                    onClick={() => setLeaderboardOpen(true)}
-                  >
-                    Xem Bảng Xếp Hạng
-                  </Button>
+                  
                 </div>
               </div>
             </div>

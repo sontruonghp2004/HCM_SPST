@@ -1,69 +1,43 @@
-import { useState } from 'react'
-import { TimelineEvent } from '../types/timeline'
-import ImageModal from './ui/ImageModal'
+// components/TimelineEventDetail.tsx
+import { TimelineEvent } from '../types/timeline';
 
 interface Props {
-  readonly event: TimelineEvent
+  event: TimelineEvent;
 }
 
 export default function TimelineEventDetail({ event }: Props) {
-  const d = event.detailContent
-  const [isOpen, setIsOpen] = useState(false)
+  const { detailContent } = event;
 
   return (
-    <div className="space-y-4 mg-t-10">
-      <div className="flex items-start space-x-4">
-        <button
-          type="button"
-          onClick={() => setIsOpen(true)}
-          aria-label={`Xem lớn ${event.title}`}
-          className="p-0 bg-transparent border-0 rounded-md overflow-hidden"
-        >
-          <img
-            src={event.image}
-            alt={event.title}
-            className="w-56 h-60 object-cover rounded-md cursor-zoom-in"
-            draggable={false}
-          />
-        </button>
+    <div className="prose prose-lg max-w-none text-gray-800">
+      <h2 className="text-3xl font-bold text-red-800 mb-6">{event.title} ({event.year})</h2>
+      
+      <p className="text-xl italic text-red-700 mb-8">{detailContent.quote}</p>
+      
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
         <div>
-          <h4 className="text-lg font-bold">
-            {event.title} <span className="text-sm text-gray-500">({event.year})</span>
-          </h4>
-          <p className="text-sm text-gray-600">{event.description}</p>
+          <h3 className="text-2xl font-semibold text-red-900 mb-4">Bối cảnh lịch sử</h3>
+          <p>{detailContent.context}</p>
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold text-red-900 mb-4">Ý nghĩa</h3>
+          <p>{detailContent.significance}</p>
         </div>
       </div>
 
-      <div>
-        <h5 className="font-semibold">Bối cảnh</h5>
-        <p className="text-sm text-gray-700">{d.context}</p>
-      </div>
+      <h3 className="text-2xl font-semibold text-red-900 mb-4">Kết quả & Bài học</h3>
+      <ul className="list-disc pl-6 space-y-3">
+        {detailContent.outcomes.map((outcome, i) => (
+          <li key={i} className="text-gray-800">{outcome}</li>
+        ))}
+      </ul>
 
-      <div>
-        <h5 className="font-semibold">Ý nghĩa</h5>
-        <p className="text-sm text-gray-700">{d.significance}</p>
-      </div>
+      <h3 className="text-2xl font-semibold text-red-900 mt-8 mb-4">Nhân vật chính</h3>
+      <p className="text-lg">{detailContent.keyFigures.join(', ')}</p>
 
-      <div>
-        <h5 className="font-semibold">Nhân vật chính</h5>
-        <p className="text-sm text-gray-700">{d.keyFigures.join(', ')}</p>
-      </div>
-
-      <div>
-        <h5 className="font-semibold">Kết quả / Hệ quả</h5>
-        <ul className="list-disc list-inside text-sm text-gray-700">
-          {d.outcomes.map((o: string) => (
-            <li key={o}>{o}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <h5 className="font-semibold">Bối cảnh lịch sử</h5>
-        <p className="text-sm text-gray-700">{d.historicalContext}</p>
-      </div>
-
-      <ImageModal isOpen={isOpen} src={event.image} alt={event.title} onClose={() => setIsOpen(false)} />
+      <p className="mt-8 text-gray-600 italic border-l-4 border-red-500 pl-6">
+        {detailContent.historicalContext}
+      </p>
     </div>
-  )
+  );
 }
