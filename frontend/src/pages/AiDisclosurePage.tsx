@@ -42,7 +42,7 @@ export default function AiDisclosurePage() {
                     Triết Lý về AI trong Giáo Dục
                   </h2>
                   <p className="text-gray-700">
-                    Nền tảng học tập <strong>"Kinh Tế Chính Trị Mác-Lênin"</strong> được xây dựng với sự hỗ trợ của trí tuệ nhân tạo nhằm tạo ra trải nghiệm giáo dục tương tác và sinh động. AI giúp xử lý nội dung, tổ chức kiến thức và cung cấp trải nghiệm học tập cá nhân hóa cho từng người học.
+                    Nền tảng học tập <strong>"Tư Tưởng Hồ Chí Minh"</strong> được xây dựng với sự hỗ trợ của trí tuệ nhân tạo nhằm tạo ra trải nghiệm giáo dục tương tác và sinh động. AI giúp xử lý nội dung, tổ chức kiến thức và cung cấp trải nghiệm học tập cá nhân hóa cho từng người học.
                   </p>
                 </section>
 

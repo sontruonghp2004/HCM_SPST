@@ -52,9 +52,9 @@ export default function HeroSection() {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-gray-50">
+        <section id="about" className="py-20 bg-[#FFFACD]">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 ">
               Tư Tưởng Hồ Chí Minh Về Xây Dựng Đảng
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">

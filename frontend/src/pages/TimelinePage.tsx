@@ -72,6 +72,17 @@ export default function TimelinePage() {
                       {event.description}
                     </p>
 
+                    {/* Chỗ gắn ảnh vào mục event - hiển thị ảnh minh họa */}
+                    {event.image && (
+                      <div className="mb-6">
+                        <img
+                          src={event.image}
+                          alt={`Hình ảnh minh họa cho sự kiện ${event.title}`}
+                          className="w-full h-64 object-contain rounded-lg shadow-md border border-gray-300" // Fix tỉ lệ: object-contain để giữ nguyên ratio, không vỡ/méo
+                        />
+                      </div>
+                    )}
+
                     <div className="inline-flex items-center text-red-600 group-hover:text-red-800 font-semibold text-lg transition-colors">
                       Xem Phân Tích Chi Tiết
                       <svg className="w-6 h-6 ml-3 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
